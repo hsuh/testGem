@@ -1,0 +1,38 @@
+.container {
+  padding: 10px;
+}
+
+h1 {
+  margin-left: 40px;
+}
+ul {
+  list-style: none;
+
+  li {
+    padding-bottom: 10px;
+  }
+
+  input#date {
+  }
+
+  li.amount {
+    float: left;
+  }
+
+  li.currencies {
+    margin-left: 325px;
+  }
+}
+
+input[type=submit]{
+  margin-left: 40px;
+}
+
+.conversion {
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.result_lbl {
+  margin-left: 60px;
+}

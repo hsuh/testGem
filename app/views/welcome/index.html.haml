@@ -1,0 +1,22 @@
+//ToDo Validation checks
+//ToDo Cucumbers
+%div.container
+  %h1= 'Fx-U-Like'
+  = form_tag root_path, method: "get", remote: true do
+    %ul
+      %li
+        = label_tag :date, "Date"
+        = text_field_tag :date
+      %li.amount
+        = label_tag :amount, "Amount"
+        = text_field_tag :amount
+      %li.currencies
+        = label_tag :from, "From"
+        = select_tag :from, options_for_select(@currencies)
+        = label_tag :to, "To"
+        = select_tag :to, options_for_select(@currencies)
+    = submit_tag "Convert"
+
+.result_lbl= "Result:"
+%div#result
+
